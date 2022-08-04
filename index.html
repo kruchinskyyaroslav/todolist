@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <main class="app">
+<section class="greetings">
+    <h2 class="title"></h2>
+    Hello,  <input type="text" id="name" placeholder="Input name">
+</section>
+<section class="create-todo">
+    <h3>Make a ToDo</h3>
+    <form id="new-todo-form">
+        <h4> Your ToDo list</h4>
+        <input type="text" name="content" id="content" placeholder="like learn frontend">
+        <h4>Choose a category</h4>
+        <div class="options">
+            <label>
+                <input type="radio" name="category" id="category1" value="business">
+                <span class="buisness bbl"></span>
+                <div>Business thing</div>
+            </label>
+
+            <label>
+                <input type="radio" name="category" id="category2" value="pleasure">
+                <span class="pleasure bbl"></span>
+                <div>Pleasure thing</div>
+            </label>
+        </div>
+    <input type="submit" value="Add ToDo">
+    </form>
+</section>
+<section class="todo_list">
+    <h3>ToDo List</h3>
+    <div class="list" id="todo_list">
+        <!-- <div class="todo_item done">
+    <label>
+        <input type="checkbox">
+        <span class="buisness bbl"></span>
+    </label>
+           <div class="todo_content">
+        <input type="text" value="Learn a REACT" readonly>
+    </div>
+    <div class="actions">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+    </div>
+    </div>
+    </div>
+    <div class="list" id="todo_list">
+    <div class="todo_item done">
+    <label>
+        <input type="checkbox">
+        <span class="pleasure bbl"></span>
+    </label>
+       <div class="todo_content">
+        <input type="text" value="Take a coffee" readonly>
+    </div>
+    <div class="actions">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+    </div>
+</div>
+</div>
+</section>
+    </main>
+
+<script src="index.js"></script>
+    
+</body>
+</html>
